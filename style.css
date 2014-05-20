@@ -3,7 +3,7 @@ body {
 }
 #container {
   background-color: #8dd8d7;
-  width: 600px;
+  width: 620px;
   height: 380px;
 
   position: absolute;
@@ -28,7 +28,12 @@ body {
   margin: 0;
   margin-bottom: 5px;
   padding: 10px 20px;
-  border-radius: 20px 5px;
+}
+#query > .input:first-child {
+  border-radius: 10px 10px 0 0;
+}
+#query > .input:last-child {
+  border-radius: 0 0 10px 10px;
 }
 #query > .input > label {
   display: inline-block;
@@ -44,18 +49,28 @@ body {
   float: left;
 }
 #answer > .label {
-  border-radius: 20px 0 0 20px;
   width: 3em;
   margin-right: 5px;
   padding-right: 0;
 }
 #answer > .value {
-  border-radius: 0 20px 20px 0;
-  width: 8em;
+  width: 10em;
 }
 #answer > .lower {
   margin-top: 5px;
 }
 #answer > .label.lower {
   clear: left;
+}
+#answer > .label.upper {
+  border-radius: 10px 0 0 0;
+}
+#answer > .value.upper {
+  border-radius: 0 10px 0 0;
+}
+#answer > .label.lower {
+  border-radius: 0 0 0 10px;
+}
+#answer > .value.lower {
+  border-radius: 0 0 10px 0;
 }
