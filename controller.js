@@ -83,6 +83,4 @@ $('input').change(function () {
       $('#lower' + i).text('??');
     else $('#lower' + i).text(tmp);
   }
-
-  console.log(vals.u1);
 });
