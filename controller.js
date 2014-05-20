@@ -75,12 +75,12 @@ $('input').change(function () {
   for (i = 1; i <= 4; i++) {
     tmp = vals['u' + i];
     if (!tmp || tmp.match && tmp.match(/too /))
-      $('#upper' + i).text('??');
+      $('#upper' + i).text(' ');
     else $('#upper' + i).text(tmp);
 
     tmp = vals['l' + i];
     if (!tmp || tmp.match && tmp.match(/too /))
-      $('#lower' + i).text('??');
+      $('#lower' + i).text(' ');
     else $('#lower' + i).text(tmp);
   }
 });
