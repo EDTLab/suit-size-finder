@@ -1,0 +1,61 @@
+body {
+  background-color: #e6e6e6;
+}
+#container {
+  background-color: #8dd8d7;
+  width: 600px;
+  height: 380px;
+
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+
+  padding: 40px;
+  border-radius: 20px;
+}
+#container > div {
+  background-color: #68cac9;
+  float: left;
+
+  padding: 20px;
+  border-radius: 20px;
+}
+#query {
+  margin-right: 20px;
+}
+#query > .input {
+  background-color: #43bcba;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  border-radius: 20px 5px;
+}
+#query > .input > label {
+  display: inline-block;
+  width: 7em;
+}
+#query > .input > input {
+  width: 80px;
+}
+#answer > div {
+  background-color: #43bcba;
+  margin: 0;
+  padding: 20px;
+  float: left;
+}
+#answer > .label {
+  border-radius: 20px 0 0 20px;
+  width: 3em;
+  margin-right: 5px;
+  padding-right: 0;
+}
+#answer > .value {
+  border-radius: 0 20px 20px 0;
+  width: 8em;
+}
+#answer > .lower {
+  margin-top: 5px;
+}
+#answer > .label.lower {
+  clear: left;
+}

@@ -3,13 +3,55 @@
   <head>
     <meta charset="utf-8" />
     <title>휠체어 장애인을 위한 남성정장 사이즈 찾기</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
   </head>
   <body>
     <div id="container">
+      <h1>휠체어 장애인을 위한 남성정장 사이즈 찾기</h1>
       <div id="query">
-        <input type="text"
+        <div class="input">
+          <label>가슴 둘레</label>
+          <input type="number" name="chest">
+        </div><!--/.input-->
+        <div class="input">
+          <label>허리 둘레</label>
+          <input type="number" name="waist">
+        </div><!--/.input-->
+        <div class="input">
+          <label>등길이</label>
+          <input type="number" name="back">
+        </div><!--/.input-->
+        <div class="input">
+          <label>엉덩이 둘레</label>
+          <input type="number" name="hip">
+        </div><!--/.input-->
+        <div class="input">
+          <label>다리 바깥쪽 길이</label>
+          <input type="number" name="leg">
+        </div><!--/.input-->
       </div><!--/#query-->
       <div id="answer">
+        <div class="label upper">상의 :&nbsp;</div><!--/.label.upper-->
+        <div class="value upper">
+          <span id="upper1">&nbsp;</span>
+          -
+          <span id="upper2">&nbsp;</span>
+          -
+          <span id="upper3">&nbsp;</span>
+          -
+          <span id="upper4">&nbsp;</span>
+        </div><!--/.value.upper-->
+        <div class="label lower">하의 :&nbsp;</div><!--/.label.lower-->
+        <div class="value lower">
+          <span id="lower1">&nbsp;</span>
+          -
+          <span id="lower2">&nbsp;</span>
+          -
+          <span id="lower3">&nbsp;</span>
+          -
+          <span id="lower4">&nbsp;</span>
+        </div><!--/.value.lower-->
       </div><!--/#answer-->
     </div><!--/#contianer-->
   </body>
