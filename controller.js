@@ -64,7 +64,7 @@ var vals = {
 
 $('input').keyup(function () { $('input').change(); });
 $('input').change(function () {
-  var i;
+  var i, tmp;
 
   vals.chest = $('input[name="chest"]').val();
   vals.waist = $('input[name="waist"]').val();
@@ -73,12 +73,15 @@ $('input').change(function () {
   vals.leg = $('input[name="leg"]').val();
 
   for (i = 1; i <= 4; i++) {
-    if (vals['u' + i].match && vals['u' + i].match(/too /))
+    tmp = vals['u' + i];
+    if (!tmp || tmp.match && tmp.match(/too /))
       $('#upper' + i).text('??');
-    else $('#upper' + i).text(vals['u' + i]);
-    if (vals['l' + i].match && vals['l' + i].match(/too /))
+    else $('#upper' + i).text(tmp);
+
+    tmp = vals['l' + i];
+    if (!tmp || tmp.match && tmp.match(/too /))
       $('#lower' + i).text('??');
-    else $('#lower' + i).text(vals['l' + i]);
+    else $('#lower' + i).text(tmp);
   }
 
   console.log(vals.u1);
