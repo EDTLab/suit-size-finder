@@ -13,6 +13,9 @@ body {
   padding: 40px;
   border-radius: 20px;
 }
+#container > h1 {
+  font-size: 30px;
+}
 #container > div {
   background-color: #68cac9;
   float: left;
