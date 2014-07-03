@@ -29,6 +29,9 @@ body {
 }
 #query > .input > input {
   width: 80px;
+  margin: 0px;
+  padding: 5px;
+  border: 1px solid #bbb;
 }
 #answer > div {
   margin: 0;
