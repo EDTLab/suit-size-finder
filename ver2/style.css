@@ -1,0 +1,51 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body {
+  background-color: #fff;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+#container {
+  position: absolute;
+  margin: 20px;
+  border: 1px solid #000;
+}
+#container > h1 {
+  font-size: 30px;
+  margin: 20px 0;
+  padding-left: 30px;
+}
+#container > div {
+  float: left;
+  margin-top: 10px;
+}
+#query > .input {
+  margin: 0;
+  padding: 15px 30px 15px 30px;
+  border-top: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+}
+#query > .input > label {
+  display: inline-block;
+  width: 180px;
+}
+#query > .input > input {
+  width: 80px;
+}
+#answer > div {
+  margin: 0;
+  padding: 20px;
+  float: left;
+  border-top: 1px solid #bbb;
+}
+#answer > .label {
+  padding-right: 0;
+}
+#answer > .value {
+  width: 10em;
+}
+#answer > .lower {
+  margin-top: 5px;
+  border-bottom: 1px solid #bbb;
+}
+#answer > .label.lower {
+  clear: left;
+}
